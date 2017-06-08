@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload files</title>
+</head>
+<body>
+<!--<p>Choose a file to upload</p>-->
+<!--<form action="http://127.0.0.1/keith/exceltojson/upload.php" method="post" enctype="multipart/form-data">-->
+    <!--<input type="file"  name="fileToUpload" id="fileToUpload"/></td>-->
+    <!--<td><input type="submit" name="submit"/></td>-->
+<!--</form>-->
+
+<p>Choose a directory to upload (works in Chrome only)</p>
+<form action="uploads.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="filesToUpload[]" id="filesToUpload" multiple="" directory="" webkitdirectory="" mozdirectory="">
+    <td><input type="submit" name="submit"/></td>
+</form>
+
+</body>
+</html>
